@@ -1,0 +1,9 @@
+.text{
+    width: 10em;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+.text h2{
+    margin-right: 20px;
+}

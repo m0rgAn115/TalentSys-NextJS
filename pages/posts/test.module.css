@@ -1,0 +1,19 @@
+.container{
+    display: flexbox;
+    -ms-flex-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.divCenter{
+    text-align: center;
+}
+
+.button{
+    width: 14em;
+    font-size: 1.2em;
+    background-color: rgb(126, 58, 189);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px auto;
+}

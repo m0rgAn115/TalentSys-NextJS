@@ -1,0 +1,14 @@
+
+
+
+.questionSpace{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px 3em;
+}
+
+.questionTitle{
+    color: rgba(11,89,83,255);
+}
+

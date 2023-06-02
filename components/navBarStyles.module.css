@@ -1,0 +1,22 @@
+.navigationBar{
+    background-color: #343486;
+    margin: 0;
+    width: 100%;
+    height: 4.3em;
+    
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    display: flex;
+    
+}
+
+.timeContainer{
+    width: 25em;
+    display: flex;
+    margin: auto auto;
+}
+
+.h2{
+    color: white;
+    margin-right: 10px;
+}

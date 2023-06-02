@@ -1,0 +1,13 @@
+.Container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    
+}
+
+@media (max-width: 1400px) {
+    .Container {
+      flex-direction: column; /* Cambio de orientación a modo columna */
+    }
+  }
