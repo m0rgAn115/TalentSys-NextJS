@@ -2,15 +2,18 @@ import Link from 'next/link'
 import Head from 'next/head';
 import MainApp from '../../components/main';
 import styles from './test.module.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
 import data from './json/data.json';
-
 export default function Test() {
   
-  
-  
+  const router = useRouter();
+  const segs = router.query.value;
+
+
   //CHANGING THE PAGE
-  const p = 1;
+  //IMPORT DATA FROM JSON
+  const p = 3;
 
   const getDataByPage= (page) => {
     const result = data.find(item => item.page === page);
@@ -19,7 +22,7 @@ export default function Test() {
   
   const dataById = getDataByPage(p);
   ///////////////////////////////////////
-  
+
 
   const [value, setValue] = useState('');
   
@@ -47,14 +50,14 @@ export default function Test() {
 
       
 
-    <MainApp getTime={getSec} segs={3600} page={p} data={dataById}/>
+    <MainApp getTime={getSec} segs={segs} page={p} data={dataById}/>
     
 
     <h1>{value}</h1>
     <div className={styles.container}>
       <div className={styles.divCenter}>
         <Link href={`./QuestionPage${p+1}?value=${value}`} >
-        <button className={styles.button} >Continue</button>
+        <button className={styles.button}>Continue</button>
         </Link>
       </div>
       

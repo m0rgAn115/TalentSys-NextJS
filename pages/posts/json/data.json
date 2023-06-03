@@ -1,0 +1,105 @@
+[
+    {
+        "page": 1,
+        "page_Info": {
+            "question_1": {
+                "questionStatement": "Entendí perfectamente las instrucciones de este cuestionario:",
+                "groupA_Answer": "Si",
+                "groupA_Value": 1,
+                "groupB_Answer": "En duda",
+                "groupB_Value": 0,
+                "groupC_Answer": "No",
+                "groupC_Value": 2
+            },
+            "question_2": {
+                "questionStatement": "Estoy dispuesto a contestar cada pregunta tan sinceramente como me sea posible.",
+                "groupA_Answer": "Si",
+                "groupA_Value": 1,
+                "groupB_Answer": "En duda",
+                "groupB_Value": 0,
+                "groupC_Answer": "No",
+                "groupC_Value": 2
+            },
+            "question_3": {
+                "questionStatement": "Preferiría tener una casa:",
+                "groupA_Answer": "En una zona poblada",
+                "groupA_Value": 1,
+                "groupB_Answer": "Intermedio",
+                "groupB_Value": 0,
+                "groupC_Answer": "Aislada en un bosque",
+                "groupC_Value": 2
+            },
+            "question_4": {
+                "questionStatement": "Yo tengo la energía suficiente para enfrentarme a mis dificultades.",
+                "groupA_Answer": "Siempre",
+                "groupA_Value": 1,
+                "groupB_Answer": "Generalmente",
+                "groupB_Value": 0,
+                "groupC_Answer": "Pocas veces",
+                "groupC_Value": 2
+            },
+            "question_5": {
+                "questionStatement": "Me siento un poco nervioso ante los animales salvajes, aunque estén enjaulados.",
+                "groupA_Answer": "Si",
+                "groupA_Value": 1,
+                "groupB_Answer": "Indeciso",
+                "groupB_Value": 0,
+                "groupC_Answer": "No",
+                "groupC_Value": 2
+            }
+            
+        }
+    },
+    {
+        "page": 2,
+        "page_Info": {
+            "question_1": {
+                "questionStatement": "Evito criticar a las personas y a sus ideas.",
+                "groupA_Answer": "Siempre",
+                "groupA_Value": 1,
+                "groupB_Answer": "A veces",
+                "groupB_Value": 0,
+                "groupC_Answer": "Nunca",
+                "groupC_Value": 2
+            },
+            "question_2": {
+                "questionStatement": "Yo hago observaciones sarcásticas a las personas que creo que se las merecen.",
+                "groupA_Answer": "Siempre",
+                "groupA_Value": 1,
+                "groupB_Answer": "A veces",
+                "groupB_Value": 0,
+                "groupC_Answer": "Nunca",
+                "groupC_Value": 2
+            },
+            "question_3": {
+                "questionStatement": "Yo prefiero la música semiclásica que las canciones populares.",
+                "groupA_Answer": "Cierto",
+                "groupA_Value": 1,
+                "groupB_Answer": "Intermedio",
+                "groupB_Value": 0,
+                "groupC_Answer": "Falso",
+                "groupC_Value": 2
+            },
+            "question_4": {
+                "questionStatement": "Si yo viera pelear a los niños de mi vecino:",
+                "groupA_Answer": "Dejaría que se arreglaran solos",
+                "groupA_Value": 1,
+                "groupB_Answer": "No sabría qué hacer",
+                "groupB_Value": 0,
+                "groupC_Answer": "Intentaría reconciliarlos",
+                "groupC_Value": 2
+            },
+            "question_5": {
+                "questionStatement": "En las reuniones sociales:",
+                "groupA_Answer": "Me hago notar",
+                "groupA_Value": 1,
+                "groupB_Answer": "No sé",
+                "groupB_Value": 0,
+                "groupC_Answer": "Prefiero permanecer a distancia.",
+                "groupC_Value": 2
+            }
+            
+        }
+    }
+]
+    
