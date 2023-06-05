@@ -1,105 +1,199 @@
-[
+[   
+    
     {
         "page": 1,
+        "GA_Value": 1,
+        "GB_Value": 3,
+        "GC_Value": 2,
         "page_Info": {
             "question_1": {
                 "questionStatement": "Entendí perfectamente las instrucciones de este cuestionario:",
                 "groupA_Answer": "Si",
-                "groupA_Value": 1,
                 "groupB_Answer": "En duda",
-                "groupB_Value": 0,
-                "groupC_Answer": "No",
-                "groupC_Value": 2
+                "groupC_Answer": "No"
             },
             "question_2": {
                 "questionStatement": "Estoy dispuesto a contestar cada pregunta tan sinceramente como me sea posible.",
                 "groupA_Answer": "Si",
-                "groupA_Value": 1,
                 "groupB_Answer": "En duda",
-                "groupB_Value": 0,
-                "groupC_Answer": "No",
-                "groupC_Value": 2
+                "groupC_Answer": "No"
             },
             "question_3": {
                 "questionStatement": "Preferiría tener una casa:",
                 "groupA_Answer": "En una zona poblada",
-                "groupA_Value": 1,
                 "groupB_Answer": "Intermedio",
-                "groupB_Value": 0,
-                "groupC_Answer": "Aislada en un bosque",
-                "groupC_Value": 2
+                "groupC_Answer": "Aislada en un bosque"
             },
             "question_4": {
                 "questionStatement": "Yo tengo la energía suficiente para enfrentarme a mis dificultades.",
                 "groupA_Answer": "Siempre",
-                "groupA_Value": 1,
                 "groupB_Answer": "Generalmente",
-                "groupB_Value": 0,
-                "groupC_Answer": "Pocas veces",
-                "groupC_Value": 2
+                "groupC_Answer": "Pocas veces"
             },
             "question_5": {
                 "questionStatement": "Me siento un poco nervioso ante los animales salvajes, aunque estén enjaulados.",
                 "groupA_Answer": "Si",
-                "groupA_Value": 1,
                 "groupB_Answer": "Indeciso",
-                "groupB_Value": 0,
-                "groupC_Answer": "No",
-                "groupC_Value": 2
+                "groupC_Answer": "No"
             }
             
         }
     },
     {
         "page": 2,
+        "GA_Value": 1,
+        "GB_Value": 3,
+        "GC_Value": 2,
         "page_Info": {
             "question_1": {
                 "questionStatement": "Evito criticar a las personas y a sus ideas.",
                 "groupA_Answer": "Siempre",
-                "groupA_Value": 1,
                 "groupB_Answer": "A veces",
-                "groupB_Value": 0,
-                "groupC_Answer": "Nunca",
-                "groupC_Value": 2
+                "groupC_Answer": "Nunca"
             },
             "question_2": {
                 "questionStatement": "Yo hago observaciones sarcásticas a las personas que creo que se las merecen.",
                 "groupA_Answer": "Siempre",
-                "groupA_Value": 1,
                 "groupB_Answer": "A veces",
-                "groupB_Value": 0,
-                "groupC_Answer": "Nunca",
-                "groupC_Value": 2
+                "groupC_Answer": "Nunca"
             },
             "question_3": {
                 "questionStatement": "Yo prefiero la música semiclásica que las canciones populares.",
                 "groupA_Answer": "Cierto",
-                "groupA_Value": 1,
                 "groupB_Answer": "Intermedio",
-                "groupB_Value": 0,
-                "groupC_Answer": "Falso",
-                "groupC_Value": 2
+                "groupC_Answer": "Falso"
             },
             "question_4": {
                 "questionStatement": "Si yo viera pelear a los niños de mi vecino:",
                 "groupA_Answer": "Dejaría que se arreglaran solos",
-                "groupA_Value": 1,
                 "groupB_Answer": "No sabría qué hacer",
-                "groupB_Value": 0,
-                "groupC_Answer": "Intentaría reconciliarlos",
-                "groupC_Value": 2
+                "groupC_Answer": "Intentaría reconciliarlos"
             },
             "question_5": {
                 "questionStatement": "En las reuniones sociales:",
                 "groupA_Answer": "Me hago notar",
-                "groupA_Value": 1,
                 "groupB_Answer": "No sé",
-                "groupB_Value": 0,
-                "groupC_Answer": "Prefiero permanecer a distancia.",
-                "groupC_Value": 2
+                "groupC_Answer": "Prefiero permanecer a distancia."
+            }
+            
+        }
+    },
+    {
+        "page": 3,
+        "GA_Value": 1,
+        "GB_Value": 3,
+        "GC_Value": 2,
+        "page_Info": {
+            "question_1": {
+                "questionStatement": "Evito criticar a las personas y a sus ideas.",
+                "groupA_Answer": "Siempre",
+                "groupB_Answer": "A veces",
+                "groupC_Answer": "Nunca"
+            },
+            "question_2": {
+                "questionStatement": "Yo hago observaciones sarcásticas a las personas que creo que se las merecen.",
+                "groupA_Answer": "Siempre",
+                "groupB_Answer": "A veces",
+                "groupC_Answer": "Nunca"
+            },
+            "question_3": {
+                "questionStatement": "Yo prefiero la música semiclásica que las canciones populares.",
+                "groupA_Answer": "Cierto",
+                "groupB_Answer": "Intermedio",
+                "groupC_Answer": "Falso"
+            },
+            "question_4": {
+                "questionStatement": "Si yo viera pelear a los niños de mi vecino:",
+                "groupA_Answer": "Dejaría que se arreglaran solos",
+                "groupB_Answer": "No sabría qué hacer",
+                "groupC_Answer": "Intentaría reconciliarlos"
+            },
+            "question_5": {
+                "questionStatement": "En las reuniones sociales:",
+                "groupA_Answer": "Me hago notar",
+                "groupB_Answer": "No sé",
+                "groupC_Answer": "Prefiero permanecer a distancia."
+            }
+        }
+    },
+    {
+        "page": 4,
+        "GA_Value": 1,
+        "GB_Value": 3,
+        "GC_Value": 2,
+        "page_Info": {
+            "question_1": {
+                "questionStatement": "Preferiría correr el riesgo de un trabajo con un sueldo elevado aunque irregular, que un trabajocon un sueldo menor y constante.",
+                "groupA_Answer": "Si",
+                "groupB_Answer": "En duda",
+                "groupC_Answer": "No"
+            },
+            "question_2": {
+                "questionStatement": "Yo hablo sobre mis sentimientos:",
+                "groupA_Answer": "Sólo si es necesario",
+                "groupB_Answer": "Intermedio",
+                "groupC_Answer": "Cada vez que tengo oportunidad"
+            },
+            "question_3": {
+                "questionStatement": "En ocasiones tengo la sensación de un vago peligro, o un miedo súbito por razones que no comprendo.",
+                "groupA_Answer": "Si",
+                "groupB_Answer": "Intermedio",
+                "groupC_Answer": "No"
+            },
+            "question_4": {
+                "questionStatement": "Cuando me regañan por algo que no hice, no me siento culpable.",
+                "groupA_Answer": "Cierto",
+                "groupB_Answer": "Intermedio",
+                "groupC_Answer": "No"
+            },
+            "question_5": {
+                "questionStatement": "Con dinero puedo comprar casi todo.",
+                "groupA_Answer": "Si",
+                "groupB_Answer": "Dudoso",
+                "groupC_Answer": "No"
+            }
+            
+        }
+    },
+    {
+        "page": 5   ,
+        "page_Info": {
+            "question_1": {
+                "questionStatement": "En mis decisiones influyen mis:",
+                "groupA_Answer": "Mis emociones",
+                "groupB_Answer": "Mis sentimientos y razón por igual",
+                "groupC_Answer": "Mis razonamientos"
+            },
+            "question_2": {
+                "questionStatement": "La mayoría de las personas serían más felices si se relacionarán más con sus semejantes e hicieran lo mismo que otros.",
+                "groupA_Answer": "Si",
+                "groupB_Answer": "Intermedio",
+                "groupC_Answer": "No"
+            },
+            "question_3": {
+                "questionStatement": "Cuando me veo en un espejo, algunas veces confundo cuál es la derecha y cuál es la izquierda.",
+                "groupA_Answer": "Cierto",
+                "groupB_Answer": "En duda",
+                "groupC_Answer": "falso"
+            },
+            "question_4": {
+                "questionStatement": "Cuando estoy platicando me gusta:",
+                "groupA_Answer": "Decir las cosas tal y como se me ocurren",
+                "groupB_Answer": "Intermedio",
+                "groupC_Answer": "Organizar primero mis pensamientos"
+            },
+            "question_5": {
+                "questionStatement": "Cuando algo en verdad me pone furioso, por lo general me calmó rápidamente",
+                "groupA_Answer": "Si",
+                "groupB_Answer": "Dudoso",
+                "groupC_Answer": "No"
             }
             
         }
     }
+
+
+    
+    
 ]
     

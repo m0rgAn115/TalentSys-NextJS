@@ -1,7 +1,7 @@
 
 import styles from './answerCheckboxStyles.module.css';
 
-export const AnswerCheckboxApp = ({answer,idQuestionContainer,isChecked,onChange,getId,id}) => { //if there is another question with the same answer, the questionNumber creates the diference for the id
+export const AnswerCheckboxApp = ({answer,isChecked,onChange,getId,id}) => { //if there is another question with the same answer, the questionNumber creates the diference for the id
 
   let state=1;
   

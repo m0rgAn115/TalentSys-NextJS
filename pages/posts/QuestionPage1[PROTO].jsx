@@ -5,33 +5,37 @@ import styles from './test.module.css';
 import { useEffect, useState } from 'react';
 import data from './json/data.json';
 import { useRouter } from 'next/router';
+import axios from 'axios';
 
 export default function Test() {
   
-  const router = useRouter();
-  const { secs, Apoints,Bpoints,Cpoints } = router.query;
+  const router = useRouter(); 
+  
+  const [cheboxValues, setCheboxValues] = useState(0);
 
-  
-  console.log(Apoints,Bpoints,Cpoints);
-  
-  
   //CHANGING THE PAGE
-  const p = 3;
+  let [page, setpage] = useState(1);
+  
   const getDataByPage= (page) => {
     const result = data.find(item => item.page === page);
     return result || null;
   }
   
-  const dataById = getDataByPage(p);
+  const dataById = getDataByPage(page);
   ///////////////////////////////////////
   
   //GETTING TIME
-  const [secRemain, setSecRemain] = useState('');
+  const [sec, setValue] = useState('');
   const getSec = (newValue) => {
-    setSecRemain(newValue);
+    setValue(newValue);
+    if(newValue<=0){
+      alert('Se ha acabado el tiempo!')
+    }
   }
   //##########################################################
   
+
+
   //OBTENIENDO VALORES DEL COMPONENTE HIJO
   const [values, setValues] = useState('');
   const handleDataFromChild = (childData) => {
@@ -45,24 +49,25 @@ export default function Test() {
 
   };
 
-
+  
   const handleClick = (event) => {
     if(!values){
       alert('Responda todas las preguntas!');
       event.preventDefault();
       
+    }else if(page<10){
+      setpage(++page);
+      const valueCheckbox = 1;
+      setCheboxValues(valueCheckbox);
+      console.log(answData);
     }else{
 
-      answData[0]+=parseInt(Apoints);
-      answData[1]+=parseInt(Bpoints);
-      answData[2]+=parseInt(Cpoints);
-
-      const href = `./QuestionPage${p+1}?secs=${secs}&Apoints=${answData[0]}&Bpoints=${answData[1]}&Cpoints=${answData[2]}`;
-      router.push(href);
-
-      alert(answData);
     }
   }
+  
+  //Sending the information
+  //Sending the information
+
 
 
   return (
@@ -75,13 +80,13 @@ export default function Test() {
         <Link href="/">Back to home</Link>
       </h2>
 
-    <MainApp getTime={getSec} segs={secs} page={p} data={dataById} onData={handleDataFromChild} onAnswSumData={handleAnswData}/>
+    <MainApp getTime={getSec} segs={3600} page={page} data={dataById} onData={handleDataFromChild} onAnswSumData={handleAnswData} valueCheckbox={cheboxValues}/>
     
     <div className={styles.container}>
       <div className={styles.divCenter}>
-        <Link href={`./QuestionPage${p+1}?secs=${secs}&Apoints=${answData[0]}&Bpoints=${answData[1]}&Cpoints=${answData[2]}`} >
+        
         <button className={styles.button} onClick={handleClick}>Continue</button>
-        </Link>
+        
       </div>
       
     </div>
@@ -90,4 +95,6 @@ export default function Test() {
   )
 }
 
-      
+{/* <Link href={`./QuestionPage${p+1}?secs=${sec}&Apoints=${answData[0]}&Bpoints=${answData[1]}&Cpoints=${answData[2]}`} >
+
+</Link> */}

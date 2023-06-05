@@ -2,19 +2,21 @@ import Link from 'next/link'
 import Head from 'next/head';
 import MainApp from '../../components/main';
 import styles from './test.module.css';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import data from './json/data.json';
+import { useRouter } from 'next/router';
+
 export default function Test() {
   
   const router = useRouter();
-  const segs = router.query.value;
+  const { secs, Apoints,Bpoints,Cpoints } = router.query;
 
-
+  console.log(Apoints,Bpoints,Cpoints);
+  
+  
+  
   //CHANGING THE PAGE
-  //IMPORT DATA FROM JSON
   const p = 2;
-
   const getDataByPage= (page) => {
     const result = data.find(item => item.page === page);
     return result || null;
@@ -22,22 +24,47 @@ export default function Test() {
   
   const dataById = getDataByPage(p);
   ///////////////////////////////////////
-
-
-  const [value, setValue] = useState('');
   
+  //GETTING TIME
+  const [secRemain, setSecRemain] = useState('');
   const getSec = (newValue) => {
-    setValue(newValue);
+    setSecRemain(newValue);
+  }
+  //##########################################################
+  
+  //OBTENIENDO VALORES DEL COMPONENTE HIJO
+  const [values, setValues] = useState('');
+  const handleDataFromChild = (childData) => {
+    setValues(childData);
+  };
+
+  const [answData, setAnswData] = useState('');
+  const handleAnswData = (childData) => {
+    setAnswData(childData);
+    console.log(childData);
+
+  };
+
+
+  const handleClick = (event) => {
+    if(!values){
+      alert('Responda todas las preguntas!');
+      event.preventDefault();
+      
+    }else{
+      
+      answData[0]+=parseInt(Apoints);
+      answData[1]+=parseInt(Bpoints);
+      answData[2]+=parseInt(Cpoints);
+
+      const href = `./QuestionPage${p+1}?secs=${secs}&Apoints=${answData[0]}&Bpoints=${answData[1]}&Cpoints=${answData[2]}`;
+      router.push(href);
+
+      alert(answData);
+    }
   }
 
-  const [isChecked, setIsChecked] = useState(false);
-  const handleCheckboxChange = (event) => {
-    setIsChecked(event.target.checked);
-  };
-  
-  const handleClick = () => {
-    return 
-  }
+
   return (
     <>
       <Head>
@@ -48,29 +75,19 @@ export default function Test() {
         <Link href="/">Back to home</Link>
       </h2>
 
-      
-
-    <MainApp getTime={getSec} segs={segs} page={p} data={dataById}/>
+    <MainApp getTime={getSec} segs={secs} page={p} data={dataById} onData={handleDataFromChild} onAnswSumData={handleAnswData}/>
     
-
-    <h1>{value}</h1>
     <div className={styles.container}>
       <div className={styles.divCenter}>
-        <Link href={`./QuestionPage${p+1}?value=${value}`} >
-        <button className={styles.button}>Continue</button>
+        <Link href={`./QuestionPage${p+1}?secs=${secs}&Apoints=${answData[0]}&Bpoints=${answData[1]}&Cpoints=${answData[2]}`} >
+        <button className={styles.button} onClick={handleClick}>Continue</button>
         </Link>
       </div>
       
     </div>
-    
-   
-    
-    
-    </>
-    
-
-
-      
+    </>   
     
   )
 }
+
+      

@@ -16,7 +16,7 @@ export default function Test() {
   
   
   //CHANGING THE PAGE
-  const p = 3;
+  const p = 5;
   const getDataByPage= (page) => {
     const result = data.find(item => item.page === page);
     return result || null;
